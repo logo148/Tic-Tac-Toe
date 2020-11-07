@@ -1,0 +1,84 @@
+:root {
+	--border: 15px;
+}
+html {
+	font-family: monospace;
+}
+body {
+	background-color: rgb(242, 235, 211);
+}
+
+div#board {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+div#messageArea {
+	box-sizing: border-box;
+	margin: 30px;
+	padding: 10px;
+
+	width: calc(450px + var(--border)*2);
+	background: rgb(10,189,172);
+
+	font-size: 5em;
+	font-weight: bold;
+	color: rgb(242, 235, 211);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div#gameArea {
+	display: flex;
+	justify-content: center;
+}
+
+table {
+	position: relative;/*用absolute會跳脫上層的流向*/
+	border-collapse: collapse;
+}
+td {
+	padding: 0;
+}
+.middle, .center{
+	border-style: solid;
+	border-color: rgb(84, 84, 84);
+}
+.middle {
+	border-width: var(--border) 0px;
+}
+.center {
+	border-width: 0px var(--border);
+}
+.middle.center{
+	border-width: var(--border) var(--border);
+}
+
+td canvas {
+	display: block; /*刪除canvas底部預設間距*/
+	cursor: pointer;
+}
+div canvas#winnerLine {
+	position: absolute;
+	display: block; /*刪除canvas底部預設間距*/
+	cursor: pointer;
+}
+
+/*td canvas#cvv {
+	background: rgba(122,0,0,1);
+	position: absolute;
+	top: 200px;
+	left: 500px;
+}*/
+
+
+
+/*td#A0, td#A2, td#B1, td#C0, td#C2 {
+	background: purple;
+}
+td#A1, td#B0, td#B2, td#C1 {
+	background: gray;
+}
+*/
