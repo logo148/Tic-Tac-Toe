@@ -143,7 +143,7 @@ function drawCircle(desk) {
 	context.strokeStyle = "rgba(179, 30, 24, 0.9)";
 	context.lineCap = "round";
 	context.beginPath();
-	context.arc(desk.width*0.5, desk.height*0.5, desk.width*0.3, (280 * Math.PI)/180, (300 * Math.PI)/180, true);
+	context.arc(desk.width*0.5, desk.height*0.5, desk.width*0.3, (0 * Math.PI)/180, (360 * Math.PI)/180, true);
 	context.stroke();
 }
 
