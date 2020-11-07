@@ -6,6 +6,7 @@ html {
 }
 body {
 	background-color: rgb(242, 235, 211);
+	height: 90vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
