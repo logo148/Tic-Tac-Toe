@@ -10,6 +10,7 @@ body {
 
 div#board {
 	position: relative;
+	height: 80vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -19,10 +20,8 @@ div#messageArea {
 	box-sizing: border-box;
 	margin: 30px;
 	padding: 10px;
-
 	width: calc(450px + var(--border)*2);
 	background: rgb(10,189,172);
-
 	font-size: 5em;
 	font-weight: bold;
 	color: rgb(242, 235, 211);
@@ -65,20 +64,3 @@ div canvas#winnerLine {
 	display: block; /*刪除canvas底部預設間距*/
 	cursor: pointer;
 }
-
-/*td canvas#cvv {
-	background: rgba(122,0,0,1);
-	position: absolute;
-	top: 200px;
-	left: 500px;
-}*/
-
-
-
-/*td#A0, td#A2, td#B1, td#C0, td#C2 {
-	background: purple;
-}
-td#A1, td#B0, td#B2, td#C1 {
-	background: gray;
-}
-*/
